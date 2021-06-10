@@ -65,7 +65,7 @@ export PATH=${PATH}:/${HOME}/bin
 
 
 # Bash history related
-export HISTIGNORE='pwd:exit:fg:bg:top:clear:history:ls:uptime:df:free'
+export HISTIGNORE='pwd:exit:fg:bg:top:clear:history:ls:uptime:df:free:tmux'
 export HITSCONTROL=ignoredups
 shopt -s histappend
 export HIStSIZE=16384
