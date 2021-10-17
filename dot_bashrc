@@ -58,6 +58,11 @@ function parse_git_dirty {
         fi
 }
 
+# If special alias defined
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 # Bash Auto completion
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
@@ -78,3 +83,6 @@ export HISTIGNORE='pwd:exit:fg:bg:top:clear:history:ls:uptime:df:free:tmux'
 export HITSCONTROL=ignoredups
 shopt -s histappend
 export HIStSIZE=16384
+
+# Check window size
+shopt -s checkwinsize
