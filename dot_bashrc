@@ -82,7 +82,7 @@ export PATH=${PATH}:/${HOME}/bin
 export HISTIGNORE='pwd:exit:fg:bg:top:clear:history:ls:uptime:df:free:tmux'
 export HITSCONTROL=ignoredups
 shopt -s histappend
-export HIStSIZE=16384
+export HISTSIZE=16384
 
 # Check window size
 shopt -s checkwinsize
