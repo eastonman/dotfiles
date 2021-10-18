@@ -80,7 +80,7 @@ fi
 
 # Another few handy aliases
 alias diff='diff --color=auto'
-alias ip='ip -color=auto'a
+alias ip='ip -color=auto'
 
 export PS1="\[\e[36m\]\u\[\e[m\]\[\e[35m\]@\[\e[m\]\[\e[36m\]\h\[\e[m\] \[\e[33m\]\W\[\e[m\]\[\e[32m\]\`parse_git_branch\`\[\e[m\] \[\e[31;40m\]\\$\[\e[m\]\[\e[36m\]>\[\e[m\] "
 case "$TERM" in
