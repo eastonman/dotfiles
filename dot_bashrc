@@ -103,3 +103,6 @@ export HISTSIZE=16384
 
 # Check window size
 shopt -s checkwinsize
+
+# GPG related
+export GPG_TTY=$(tty)
