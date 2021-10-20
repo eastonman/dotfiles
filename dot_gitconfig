@@ -1,6 +1,7 @@
 [user]
         name = "Easton Man"
         email = me@eastonman.com
+        signingkey = E8EB7F1D207C5B422CA742E6266994FBBBDBC91E
 [commit]
         gpgsign = true
 [tag]
