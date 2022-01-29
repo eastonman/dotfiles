@@ -28,8 +28,6 @@ set lazyredraw          " Only redraw when necessary
 
 set report      =0      " Always report changed lines
 
-set list                " Show non-printable characters
-
 set autoread
 
 " Load plugins acording to detected fileetype
