@@ -1,17 +1,59 @@
-set autoindent
-set autoread
-set expandtab
-set smarttab
-set history=500
-set tabstop=4
-set shiftwidth=4
+"
+"   My VIM configuration
+"
+"
 
+" No VI compatible
+set nocompatible
+
+set autoindent          " Indent according to previous line
+set expandtab           " use space instead of tab
+set smarttab
+set history     =500
+set softtabstop =4      " Tab == 4 spaces
+set shiftwidth  =4      " >> indents by 4 spaces
+set shiftround          " >> indents to next aligned position
+
+set laststatus  =2      " Always show status line
+set display     =lastline   " show as much as possible of the last line
+
+set showmode            " Show current mode
+set showcmd             " Show already typed keys when more are expected
+
+set incsearch           " Hightlight while searching with / or ?
+set hlsearch            " Keep matches highlighted
+
+set ttyfast             " Faster redrawing
+set lazyredraw          " Only redraw when necessary
+
+set report      =0      " Always report changed lines
+
+set list                " Show non-printable characters
+
+set autoread
+
+" Load plugins acording to detected fileetype
 filetype plugin on
 filetype indent on
 
-syntax enable
+syntax on " syntax highlighting
 
+" Jump to last editing line
 if has("autocmd")
     autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 endif
+
+
+
+" Put all temporary files under the same directory.
+" https://github.com/mhinz/vim-galore#temporary-files
+set backup
+set backupdir   =$HOME/.vim/files/backup/
+set backupext   =-vimbackup
+set backupskip  =
+set directory   =$HOME/.vim/files/swap/
+set updatecount =100
+set undofile
+set undodir     =$HOME/.vim/files/undo/
+set viminfo     ='100,n$HOME/.vim/files/info/viminfo
