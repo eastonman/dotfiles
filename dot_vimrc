@@ -28,6 +28,8 @@ set lazyredraw          " Only redraw when necessary
 
 set report      =0      " Always report changed lines
 
+set relativenumber      " Enable relative line number
+
 set autoread
 
 " Load plugins acording to detected fileetype
