@@ -1,2 +1,9 @@
 README.md
 LICENSE
+
+# Only use .vimrc on My MacBook
+{{- if eq .chezmoi.os "darwin" }}
+*/**
+!.vimrc
+!.vim/**
+{{- end }}
