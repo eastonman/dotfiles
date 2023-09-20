@@ -1,8 +1,10 @@
 [user]
         name = "Easton Man"
         email = me@eastonman.com
-        signingkey = E8EB7F1D207C5B422CA742E6266994FBBBDBC91E
+        signingkey = 90BFA4AA9F563D97
 [commit]
         gpgsign = true
 [tag]
         forcesignannotated = true
+[credential]
+        helper = store
