@@ -110,11 +110,15 @@ export LANG=en_US.UTF-8
 
 
 
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # Bash history related
 export HISTIGNORE='pwd:exit:fg:bg:top:clear:history:ls:uptime:df:free:tmux'
 export HISTCONTROL=ignoredups
 shopt -s histappend
 export HISTSIZE=800000
+export PROMPT_COMMAND='history -a'
 
 # Check window size
 shopt -s checkwinsize
@@ -122,3 +126,4 @@ shopt -s checkwinsize
 # GPG related
 alias gpg="gpg --no-autostart"
 export GPG_TTY=$(tty)
+
