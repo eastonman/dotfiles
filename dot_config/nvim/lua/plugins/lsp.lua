@@ -21,6 +21,7 @@ return {
                 ensure_installed = {
                     -- See https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
                     "rust_analyzer", -- Rust
+                    "clangd", -- C/C++
                 },
                 handlers = {
                     lsp_zero.default_setup,
@@ -40,7 +41,9 @@ return {
                         vim.snippet.expand(args.body)
                     end,
                 },
-                mapping = cmp.mapping.preset.insert({}),
+                mapping = cmp.mapping.preset.insert({
+                    ['<Tab>'] = cmp.mapping.confirm({select = true}),
+                }),
             })
         end,
     }
