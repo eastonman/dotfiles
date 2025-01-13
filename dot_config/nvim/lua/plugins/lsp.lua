@@ -26,6 +26,22 @@ return {
                     lsp_zero.default_setup,
                 },
             })
+            require("lspconfig").rust_analyzer.setup {}
+
+            local cmp = require('cmp')
+            cmp.setup({
+                sources = {
+                    {name = 'nvim_lsp'},
+                    {name = 'buffer'},
+                },
+                snippet = {
+                    expand = function(args)
+                        -- You need Neovim v0.10 to use vim.snippet
+                        vim.snippet.expand(args.body)
+                    end,
+                },
+                mapping = cmp.mapping.preset.insert({}),
+            })
         end,
     }
 }
