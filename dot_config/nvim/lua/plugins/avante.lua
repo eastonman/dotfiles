@@ -2,7 +2,7 @@ return {
     {
         "yetone/avante.nvim",
         event = "VeryLazy",
-        lazy = false,
+        lazy = true,
         version = false, -- set this to "*" if you want to always pull the latest change, false to update on release
         opts = {
             provider = "openai",
@@ -55,6 +55,7 @@ return {
             {
                 -- Make sure to set this up properly if you have lazy=true
                 'MeanderingProgrammer/render-markdown.nvim',
+                dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' },
                 opts = {
                     file_types = { "markdown", "Avante" },
                 },

@@ -11,3 +11,10 @@ vim.opt.shiftwidth = 0 -- set to 0 to default to tabstop value
 -- theme
 vim.cmd.colorscheme("dracula")
 
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- optionally enable 24-bit colour
+vim.opt.termguicolors = true
+
