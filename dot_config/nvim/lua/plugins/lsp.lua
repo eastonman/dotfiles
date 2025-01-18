@@ -22,6 +22,8 @@ return {
                     -- See https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
                     "rust_analyzer", -- Rust
                     "clangd", -- C/C++
+                    "pylsp", -- Python
+                    "ruff", -- Python formatter
                 },
                 handlers = {
                     lsp_zero.default_setup,
