@@ -21,4 +21,12 @@ return {
         "https://github.com/farmergreg/vim-lastplace",
         event = "BufReadPost",
     },
+    {
+        -- toggle comments using shortcuts
+        'numToStr/Comment.nvim',
+        event = { "VeryLazy" },
+        opts = {
+            -- add any options here
+        }
+    }
 }
