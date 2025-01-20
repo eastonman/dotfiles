@@ -28,5 +28,14 @@ return {
         opts = {
             -- add any options here
         }
+    },
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    {
+        'akinsho/git-conflict.nvim',
+        version = "*",
+        config = true
     }
 }

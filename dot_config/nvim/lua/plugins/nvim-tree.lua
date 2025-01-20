@@ -8,6 +8,6 @@ return {
     config = function()
         require("nvim-tree").setup {
         }
-        vim.keymap.set('n', '<C-m>', ':NvimTreeToggle<CR>')
+        vim.keymap.set('n', '<M-m>', ':NvimTreeToggle<CR>')
     end,
 }
