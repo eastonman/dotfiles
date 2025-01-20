@@ -14,12 +14,12 @@ return {
         end,
     },
     {
-        "https://github.com/tpope/vim-sleuth",
-        event = { "BufReadPost", "BufNewFile" }, -- Load after your file content
-    },
-    {
         "https://github.com/farmergreg/vim-lastplace",
         event = "BufReadPost",
+    },
+    {
+        "https://github.com/tpope/vim-sleuth",
+        event = { "BufReadPost", "BufNewFile" }, -- Load after your file content
     },
     {
         -- toggle comments using shortcuts

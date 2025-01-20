@@ -7,6 +7,11 @@ return {
     },
     config = function()
         require("nvim-tree").setup {
+            git = {
+                enable = true,
+                ignore = false,
+                timeout = 500,
+            },
         }
         vim.keymap.set('n', '<M-m>', ':NvimTreeToggle<CR>')
     end,
