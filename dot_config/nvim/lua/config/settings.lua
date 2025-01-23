@@ -21,4 +21,5 @@ vim.opt.termguicolors = true
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 vim.opt.foldlevelstart = 99
+vim.api.nvim_set_option("clipboard", "unnamedplus")
 
